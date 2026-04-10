@@ -159,3 +159,35 @@ button.secondary:hover {
 
 
 /* Cards */
+.card {
+    background-color: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.card:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Card with Accent (Left Border) */
+.card.accent {
+    border-left: 4px solid var(--color-accent);
+    padding-left: 1.5rem;
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--color-text-primary);
+}
+
+.card p {
+    margin: 0;
+    color: var(--color-text-secondary);
+}
+
+
+/* Code Block */
