@@ -208,3 +208,14 @@ button.secondary:hover {
 }
 
 /* Syntax highlighting for keywords */
+.code code[data-keyword] {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.code code[data-comment] {
+    color: var(--color-sage);
+}
+
+
+/* 
