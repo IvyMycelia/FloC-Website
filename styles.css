@@ -40,5 +40,44 @@
     --font-mono: 'Fira Code', 'Courier New', monospace;
 
     /* Spacing & Sizing */
-    
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+}
+
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-bg: var(--color-bg-dark);
+        --color-bg-secondary: var(--color-bg-secondary-dark);
+        --color-text-primary: var(--color-text-primary-dark);
+        --color-text-secondary: var(--color-text-secondary-dark);
+        --color-primary: var(--color-primary-dark);
+        --color-accent: var(--color-accent-dark);
+        --color-green: var(--color-green-dark);
+        --color-gold: var(--color-gold-dark);
+        --color-sage: var(--color-sage-dark);
+        --color-border: var(--color-border-dark);
+    }
+}
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--color-bg);
+    color: var(--color-text-primary);
+    line-height: 1.7;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
