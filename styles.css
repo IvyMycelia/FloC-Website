@@ -81,3 +81,81 @@ body {
     line-height: 1.7;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+/* Container */
+#test {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+
+/* Typography */
+h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: var(--color-text-primary);
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    color: var(--color-text-primary);
+}
+
+p {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+}
+
+
+/* Buttons */
+button {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--border-radius-lg);
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: var(--font-sans);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0px);
+}
+
+/* Primary Button */
+button.primary {
+    background-color: var(--color-primary);
+    color: white;
+}
+
+button.primary:hover {
+    background-color: var(--color-accent);
+}
+
+/* Secondary Button */
+button.secondary {
+    background-color: transparent;
+    color: var(--color-text-primary);
+    border: 2px solid var(--color-primary);
+}
+
+button.secondary:hover {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+
+/* Cards */
